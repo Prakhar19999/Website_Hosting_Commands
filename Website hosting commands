@@ -1,0 +1,38 @@
+AWS S3 Bucket commands
+https://www.youtube.com/watch?v=DN5odSDhmi8
+
+
+Copy files from EC2 to local machine:(to be run on local terminal)
+scp -i edc.pem ubuntu@ec2-18-188-236-81.us-east-2.compute.amazonaws.com:edcNITD-website/website/db.sqlite3 ~/Desktop
+https://www.youtube.com/watch?v=q2OHvlr081s
+
+Copy files from local machine to EC2 instance:(to be run on local terminal)
+sudo scp -i edc.pem ~/Desktop/edcnitd.pem ubuntu@ec2-18-188-236-81.us-east-2.compute.amazonaws.com:
+https://www.youtube.com/watch?v=q2OHvlr081s
+
+
+Website Public DNS:
+ec2-18-188-236-81.us-east-2.compute.amazonaws.com
+
+sudo supervisorctl reload
+sudo systemctl reload nginx
+
+Important Points:
+While uploading pics from backened, its size must no be greater than 1MB
+Befor debloying django projects on server,Make sure you have kept DEBUG=True in settings.py
+Always run python manage.py collectstatic whenever there is some change in static files
+
+Connect to server:
+ssh -i "edc.pem" ubuntu@ec2-18-188-236-81.us-east-2.compute.amazonaws.com
+
+Django moderator
+Username:moderator
+Password:peacemaker
+
+Django superuser:
+Username:ubuntu
+Password:edcisepic
+
+
+SSL certificate:
+https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-16-04
