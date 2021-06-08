@@ -36,3 +36,6 @@ Password:edcisepic
 
 SSL certificate:
 https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-16-04
+
+AWS Commands for file transfer between server and instance:
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html
