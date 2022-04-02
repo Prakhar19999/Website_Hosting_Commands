@@ -27,14 +27,6 @@ Always run python manage.py collectstatic whenever there is some change in stati
 Connect to server:
 ssh -i "edc.pem" ubuntu@ec2-18-188-236-81.us-east-2.compute.amazonaws.com
 
-Django moderator
-Username:moderator
-Password:peacemaker
-
-Django superuser:
-Username:ubuntu
-Password:edcisepic
-
 
 SSL certificate:
 https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-16-04
